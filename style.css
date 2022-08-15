@@ -1,0 +1,389 @@
+/* ------------ Main assets code ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 1000px;
+}
+p {
+    font-weight: 300;
+    color: #111;
+}
+/* ------------ Banner code ------------*/
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transform: 0.5s;
+}
+.btn:hover {
+    letter-spacing: 6px;
+    color: #111;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;    l
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color:#fff ;
+    font-weight:300 ;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+header .logo:hover {
+    color: #ff0157;  
+}
+/* ------------ End Banner code ------------*/
+
+/* ------------ About code ------------*/
+section {
+    background-image: url(img/light_dot.jpg);
+    padding: 100px;
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .imgbox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ------------ End About code ------------*/
+
+/* ------------ Menu code ------------*/
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+}
+
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .imgbox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgbox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box h3 {
+    padding: 15px 0 5px;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* ------------ End Menu code ------------*/
+
+/* ------------  Experts code ------------*/
+
+.experts .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.experts .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.experts .content .box .imgbox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.experts .content .box .imgbox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experts .content .box h3 {
+    padding: 15px 0 5px;
+    text-align: center;
+    font-weight: 300;
+}
+/* ------------ End Expers code ------------*/
+
+/* ------------  Testimonals code ------------*/
+.testimonals {
+    background: url(img/bg2.jpg);
+    background-size: cover;
+}
+
+.white h2 {
+    color: #fff;
+}
+
+.white p {
+    color: #fff;
+}
+
+.testimonals .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+
+}
+
+.testimonals .content .box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonals .content .box .imgbox {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.testimonals .content .box .imgbox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+  
+
+.testimonals .content .box h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.testimonals .content .box p {
+    text-align: center;
+    font-weight: 300; 
+    font-style: italic;
+    color: #666;
+}
+/* ------------ End Testimonals code ------------*/
+
+/* ------------  Contact code ------------*/
+.contact {
+    background: url(img/bg3.jpg);
+    background-size: cover;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox  input {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox  textarea {
+    resize: none;
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+   
+}
+
+.contactForm .inputBox  input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.copyrights p {
+    color: #fff;
+    background: #000;
+    text-align: center;
+    padding: 8px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.copyrights a {
+    color: #ff0157;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* ------------ End Contact code ------------*/
+
+/* ------------ Responsive code ------------*/
