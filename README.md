@@ -1,2 +1,2 @@
 # Food.com
- Food Website
+ Food Website for advertising purposes.
